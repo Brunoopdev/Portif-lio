@@ -130,7 +130,8 @@ body{
 }
 
 .inicial__image__imagem{
-    width: 400px;
+    width: 450px;
+    height: 400px;
     margin-right: 50px;
 }
 
@@ -146,6 +147,40 @@ body{
     max-width: 100px;
 }
 
-.inicial-hidden{
+/* esconde o conteúdo */
+
+.conteudo--hidden{
     display: none;
+}
+
+.projetos{
+    height: 100%;
+}
+
+.projetos--active{
+    display: none;
+}
+
+.projetos__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.projeto--um, .projeto--dois{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.projeto--um h3, .projeto--dois h3{
+    margin-bottom: 20px;
+}
+
+.projeto--um p, .projeto--dois p{
+    margin-bottom: 20px;
+}
+
+.projetos__footer{
+    text-align: center;
 }
