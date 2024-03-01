@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(#f3ef1638 0%, #ffffff 100%);
+    background-repeat: no-repeat;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.comeco{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.comeco a{
+    color: #000;
+    text-decoration: none;
+}
+
+.comeco__nav__list{
+    display: inline-flex;
+    list-style: none;
+}
+
+.comeco__logos{
+    display: flex;
+}
+
+/* Ativa o botão */
+
+.comeco__logos--active{
+    border-bottom: 4px solid black;
+}
+
+.comeco__logos--active{
+    border-bottom: 4px solid black;
+}
+
+.comeco__nav__list__item{
+    margin-right: 30px;
+    border:none;
+}
+
+.comeco__projeto, .comeco__sobre, .comeco__inicio{
+    display:inline-flex;
+    align-items: center;
+}
+
+.comeco__projeto, .comeco__sobre, .comeco__inicio{
+    padding: 0px 4px;
+}
+
+.comeco__logos .img--geral{
+    width: 29px;
+    height: 22px;
+    margin-right: 5px;
+}
+
+.imagem--unica{
+    width: 18px;
+    margin-right: 5px;
+}
+
+.inicial{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.inicial__sidebar__lista{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+}
+
+.inicial__sidebar__logo{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inicial__sidebar__logo img{
+    width: 30px;
+}
+
+/* .inicial__conteudo{} */
+
+
+.inicial__conteudo__title, .inicial__conteudo__subtitle, .inicial__conteudo__sub-subtitle, .inicial__conteudo__paragrafo{
+    text-align: center;
+}
+
+.inicial__conteudo__title{
+    max-width: 250px;
+    display: flex;
+    justify-content: start;
+    margin: 0 auto;
+    font-size: 50px
+}
+
+.inicial__conteudo__subtitle{
+    max-width: 250px;
+    display: flex;
+    justify-content:end;
+    margin: 0 auto;
+    font-size: 40px;
+    width: 100%;
+}
+
+.inicial__conteudo__sub-subtitle{
+    margin-top: 10px;
+    font-size: 25px;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.inicial__conteudo__paragrafo{
+    max-width: 350px;
+    margin: 20px auto;
+    font-size: 25px;
+}
+
+.inicial__image__imagem{
+    width: 400px;
+    margin-right: 50px;
+}
+
+.inicial__image{
+    text-align: center;
+}
+
+.inicial__conteudo__contato{
+    text-align: center;
+}
+
+.inicial__conteudo__contato img{
+    max-width: 100px;
+}
+
+.inicial-hidden{
+    display: none;
+}
