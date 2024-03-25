@@ -1,186 +1,247 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body{
-    background: linear-gradient(#f3ef1638 0%, #ffffff 100%);
+html{
+    background-image: url(./images/background.png);
+    background-size:auto;
     background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
+.hidden{
+    display: none;
 }
 
 .container{
     max-width: 1024px;
     margin: 0 auto;
+    position: static;
 }
 
-.comeco{
+.cabecalho__navegacao{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.cabecalho__lista{
     display: flex;
     justify-content: space-between;
-    padding: 24px;
-}
-
-.comeco a{
-    color: #000;
-    text-decoration: none;
-}
-
-.comeco__nav__list{
-    display: inline-flex;
     list-style: none;
+    margin-top: 80px;
 }
 
-.comeco__logos{
+.cabecalho__lista__item{
+    padding: 0px 10px;
+    border-bottom: 3px solid transparent;
+    padding-top: 5px;
+}
+
+h1{
+    color: #fff;
+}
+
+
+/* BARRA BOTTOM -- ITEM ATIVO */
+.cabecalho__lista__item--active{
+    border-bottom: 3px solid #F8A000;
+    padding-bottom: 5px;
+}
+
+
+
+.cabecalho__lista__item a{
     display: flex;
-}
-
-/* Ativa o botão */
-
-.comeco__logos--active{
-    border-bottom: 4px solid black;
-}
-
-.comeco__logos--active{
-    border-bottom: 4px solid black;
-}
-
-.comeco__nav__list__item{
-    margin-right: 30px;
-    border:none;
-}
-
-.comeco__projeto, .comeco__sobre, .comeco__inicio{
-    display:inline-flex;
     align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
 }
 
-.comeco__projeto, .comeco__sobre, .comeco__inicio{
-    padding: 0px 4px;
+.cabecalho__lista__item a:hover{
+    color: #000;
 }
 
-.comeco__logos .img--geral{
-    width: 29px;
-    height: 22px;
-    margin-right: 5px;
-}
-
-.imagem--unica{
-    width: 18px;
-    margin-right: 5px;
-}
-
-.inicial{
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.inicial__sidebar__lista{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30%;
-}
-
-.inicial__sidebar__logo{
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.inicial__sidebar__logo img{
+.cabecalho__lista__item img{
     width: 30px;
+    margin-right: 5px;
 }
 
-/* .inicial__conteudo{} */
-
-
-.inicial__conteudo__title, .inicial__conteudo__subtitle, .inicial__conteudo__sub-subtitle, .inicial__conteudo__paragrafo{
-    text-align: center;
-}
-
-.inicial__conteudo__title{
-    max-width: 250px;
-    display: flex;
-    justify-content: start;
-    margin: 0 auto;
-    font-size: 50px
-}
-
-.inicial__conteudo__subtitle{
-    max-width: 250px;
-    display: flex;
-    justify-content:end;
-    margin: 0 auto;
-    font-size: 40px;
-    width: 100%;
-}
-
-.inicial__conteudo__sub-subtitle{
-    margin-top: 10px;
-    font-size: 25px;
-    opacity: 0.5;
-    font-style: italic;
-}
-
-.inicial__conteudo__paragrafo{
-    max-width: 350px;
-    margin: 20px auto;
-    font-size: 25px;
-}
-
-.inicial__image__imagem{
-    width: 450px;
-    height: 400px;
-    margin-right: 50px;
-}
-
-.inicial__image{
-    text-align: center;
-}
-
-.inicial__conteudo__contato{
-    text-align: center;
-}
-
-.inicial__conteudo__contato img{
-    max-width: 100px;
-}
-
-/* esconde o conteúdo */
-
-.conteudo--hidden{
-    display: none;
-}
-
-.projetos{
-    height: 100%;
-}
-
-.projetos--active{
-    display: none;
-}
-
-.projetos__container{
+.cabecalho__info{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    max-width: 690px;
+    margin: 0 auto;
+    margin-top: 110px;
+    padding-bottom: 40px;
 }
 
-.projeto--um, .projeto--dois{
-    max-width: 500px;
+.cabecalho__info__text p{
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.cabecalho__info__img{
+    text-align: end;
+}
+
+.cabecalho__info__img img{ 
+    width: 200px;
+}
+
+/* projetos */
+
+.projetos__text{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.github{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projetos__list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.projetos__list__item{
+    text-align: center;
+}
+
+.projetos__list__item img {
+    width: 250px;
+    height: 150px;  
+    box-shadow: rgba(204, 204, 204, 0.801) -20px 20px 2px 5px;
+}
+
+.projetos__list__item h3{
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.projetos__list__item a{
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* SOBRE MIM */
+
+.about__container{
+    display: flex;
+    position: static;
+}
+
+.about__container__social__logo, .logo{
+    transition: transform 0.3s ease;
+}
+
+.about__container__social__logo:hover, .logo:hover{
+    transform: scale(1.2);
+}
+
+
+
+.about__text{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about__text h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.about__text p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 500px;
     margin: 0 auto;
 }
 
-.projeto--um h3, .projeto--dois h3{
-    margin-bottom: 20px;
+.about__container__social{
+    position: fixed;
+    bottom: 30px; 
+    left: 40px;
 }
 
-.projeto--um p, .projeto--dois p{
-    margin-bottom: 20px;
+.about__container__social img{
+    height: 30px;
+    margin: 10px;
 }
 
-.projetos__footer{
+.about__container{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     text-align: center;
 }
+
+.about__container__languages{
+    margin-top: 20px;
+}
+
+.about__container__languages h3{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.barra__nivel{
+    width: 300px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.589);
+    margin: 10px 0px;
+}
+
+.barra__intra__front{
+    width: 200px;
+    height: 5px;
+    background-color: #f8be00;
+    margin: 10px 0px;
+}
+
+.barra__intra__js{
+    width: 130px;
+    height: 5px;
+    background-color:#f8be00;
+    margin: 10px 0px;
+}
+
+.barra__intra__bancoDeDados{
+    width: 50px;
+    height: 5px;
+    background-color:#f8be00;
+    margin: 10px 0px;
+}
+
+.barra__intra__php{
+    width: 50px;
+    height: 5px;
+    background-color: #f8be00;
+    margin: 10px 0px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 10px;
+    left: 44.6%;
+    opacity: .7;
+    font-size: 12px;
+}
+

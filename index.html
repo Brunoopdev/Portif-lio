@@ -1,95 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My page</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Portfólio exemplo</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="./main.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="comeco">
-            <a href="#">
-                <div class="comeco__logos">
-                    <img class="img--geral" src="./images/logo gmail.png" alt="">
-                    <h3>brunoopdev@gmail.com</h3>
-                </div>
-            </a>
-            <nav class="comeco__nav">
-                <ul class="comeco__nav__list">
-                    <li data-botao="inicial" class="comeco__nav__list__item">
-                        <a href="#">
-                            <div class="comeco__inicio comeco__logos--active">
-                                <img class="imagem--unica" src="./images/code logo.png" alt="">
-                                <h3 class="comeco__nav__list__item__sobre">Home</h3>
-                            </div>
-                        </a>
-                    </li>
-                    <li data-botao="projetos" class="comeco__nav__list__item">
-                        <a href="#">
-                            <div class="comeco__projeto  comeco__logos--active">
-                                <img class="img--geral" src="./images/logo projetos.png" alt="">
-                                <h3 class="comeco__nav__list__item__projetos">Projects</h3>
-                            </div>
-                        </a>
-                    </li>
-                    <li data-botao="sobre" class="comeco__nav__list__item">
-                        <a href="#">
-                            <div class="comeco__sobre comeco__logos--active">
-                                <img class="imagem--unica" src="./images/logo sobre.png" alt="">
-                                <h3 class="comeco__nav__list__item__sobre">About</h3>
-                            </div>
-                        </a>
-                    </li>
+    <header class="cabecalho">
+        <div class="container">
+            <nav class="cabecalho__navegacao">
+                <ul class="cabecalho__lista">
+                    <li class="cabecalho__lista__item cabecalho__lista__item--active" data-button="home" ><a class="logo" href="#"><img src="./images/home.png">Home</a></li>
+                    <li class="cabecalho__lista__item" data-button="projetos" ><a class="logo" href="#"><img src="./images/new-product.png">Projects</a></li>
+                    <li class="cabecalho__lista__item" data-button=""><a class="logo" href="#"><img  src="./images/coding.png">About</a></li>
                 </ul>
             </nav>
         </div>
+    </header>
+
+    <section class="" id="home" data-id="home">
+        <div class="container">
+        <div class="cabecalho__info">
+            <div class="cabecalho__info__text animate__animated animate__zoomIn">
+                <h1>Full Stack Developer</h1>
+                <p>Hi, i’m Bruno a developer in construction, today i work with websites and front end developer, but i am studying back-end languages, like PHP and mySQL    </p>
+            </div>
+            <div class="cabecalho__info__img animate__animated animate__zoomIn">
+                <img src="./images/image avatar.png" alt="">
+            </div>
+        </div>
     </div>
-    
-    <section data-conteudo="inicial" class="inicial"> 
-        <aside class="inicial__sidebar">
-            <ul class="inicial__sidebar__lista">
-                <li class="inicial__sidebar__logo"><a href="#"><img src="./images/logo linkedin.png"></a></li>
-                <li class="inicial__sidebar__logo"><a href="#"><img src="./images/logo github.png"></a></li>
-                <li class="inicial__sidebar__logo"><a href="#"><img src="./images/logo instagram.png"></a></li>
+    </section>
+
+    <section class="hidden" id="projetos" data-id="projetos">
+        <div class="container  animate__animated animate__zoomIn">
+            <h2 class="projetos__text">Here are some of my projects, you also can find them on my <a class="github" href="#">GitHub!</a></h2>
+            <ul class="projetos__list">
+                <li class="projetos__list__item animate__animated animate__pulse">
+                    <a href="#">
+                        <h3>Disney + landing page</h3>
+                        <img src="./images/projeto disney.PNG">
+                    </a>
+                </li>
+                <li class="projetos__list__item animate__animated animate__pulse">
+                    <a href="#">
+                        <h3>Fokus pomodoro</h3>
+                        <img src="./images/projeto fokus.PNG">
+                    </a>
+                </li>
+                <li class="projetos__list__item animate__animated animate__pulse">
+                    <a href="#">
+                        <h3>Ebac talks</h3>
+                        <img src="./images/projeto ebac talks.PNG">
+                    </a>
+                </li>
             </ul>
-        </aside>
-
-        <div class="inicial__conteudo">
-            <h1 class="inicial__conteudo__title">Bruno</h1>
-            <h2 class="inicial__conteudo__subtitle">Oliveira</h2>
-            <div class="inicial__conteudo__sub-subtitle">Software developer</div>
-            <p class="inicial__conteudo__paragrafo">
-                Software developer from Brazil, São Paulo. I work with front-end and back-end some of languages that I use is JavaScript and Java, also I study SQL and mySQL.
-            </p>
-            <div class="inicial__conteudo__contato"><a href="#"><img src="./images/botao contato.png"></a></div>
-        </div>
-
-        <div class="inicial__image">
-            <img class="inicial__image__imagem" src="./images/foto avatar.png">
         </div>
     </section>
 
-    <section data-conteudo="projetos" class="projetos">
-        <div class="projetos__container">
-            <div class="projeto--um">
-                <h3>Disney+ landing page</h3>
-                <p>This is a copy of disney+ landing page that i use HTML, Sass, and JavaScript</p>
-                <img src="./images/disney + projeto.png">
+    <section class="hidden" id="about" data-id="about">
+        <div class="container">
+            <div class="about__text animate__animated animate__zoomIn">
+                <h2>ABOUT ME</h2>
+                <p>I start studying with development in Jully 2023, actually i work with JavaScript and Java, exactly like a Full Stack </p>
             </div>
-            <div class="projeto--dois">
-                <h3>Fokus</h3>
-                <p>This ia a pomodoro timer, that i use HTML, CSS and JavaScript
-                    I also use some features like localStorage
-                </p>
-                <img src="./images/fokus projeto.png">
+
+            <div class="about__container__social animate__animated animate__zoomIn">
+                <a href="#" ><img class="about__container__social__logo" src="./images/linkedin.png" alt="linkedin"></a>
+                <a href="#" ><img class="about__container__social__logo" src="./images/github-logo.png" alt="github"></a>
+                <a href="#" ><img class="about__container__social__logo" src="/images/instagram.png" alt="instagram"></a>
+                <a href="#" ><img class="about__container__social__logo" src="/images/email.png" alt="email"></a>
+            </div>
+
+            <div class="about__container animate__animated animate__zoomIn ">
+            <div class="about__container__languages">
+                <h3>HTML | CSS | Sass</h3>
+                <div class="barra__nivel">
+                    <div class="barra__intra__front"></div>
+                </div>
+                <h3>JavaScript</h3>
+                <div class="barra__nivel">
+                    <div class="barra__intra__js"></div>
+                </div>
+                <h3>SQL | mySQL</h3>
+                <div class="barra__nivel">
+                    <div class="barra__intra__bancoDeDados"></div>
+                </div>
+                <h3>PHP</h3>
+                <div class="barra__nivel">
+                    <div class="barra__intra__php"></div>
+                </div>
             </div>
         </div>
-        <footer class="projetos__footer">
-            more on my github
-        </footer>
+        </div>
     </section>
 
+    <footer class="footer">
+        &copy;todos os direitos resevados
+    </footer>
 </body>
 </html>

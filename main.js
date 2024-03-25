@@ -1,41 +1,34 @@
-const btnInicio = document.querySelector('.comeco__inicio');
-const btnProjetos = document.querySelector('.comeco__projeto');
-const btnSobre= document.querySelector('.comeco__sobre');
-const conteudoPrincipal = document.querySelectorAll('[data-conteudo]')
-const botoes = document.querySelectorAll('[data-botao]');
+const botoesCabecalho = document.querySelectorAll('.cabecalho__lista__item');
+const secoes = document.querySelectorAll('[data-id]')
 
-
-console.log(botoes)
-
-botoes.forEach(evento =>{
-    const valor = evento.dataset.botao;
-
-    console.log(valor);
-})
-
-
-btnInicio.addEventListener('click', () =>{
-    btnInicio.classList.toggle('comeco__logos--active')
-})
-
-btnProjetos.addEventListener('click', () =>{
-    btnProjetos.classList.toggle('comeco__logos--active');
-})
-
-btnSobre.addEventListener('click', () =>{
-    btnSobre.classList.toggle('comeco__logos--active');
-})
-
-// function mostraConteudo(){
-//     const conteudo = conteudoPrincipal.dataset.conteudo;
-//     conteudoPrincipal.forEach(valor => {
-//         elemento.classList.add('conteudo--hidden')
-//     });
+botoesCabecalho.forEach((elementoBotao, index) =>{
+    const botoes = elementoBotao;
     
-// }
+    botoes.addEventListener('click', () =>{
 
+        botoesCabecalho.forEach(elemento =>{
+            const botaoSelecionado = elemento;
+            botaoSelecionado.classList.remove('cabecalho__lista__item--active');  
+        })
 
-conteudoPrincipal.forEach(elemento =>{
+        const mudaContexto = botoes.dataset.button;
+        botoes.classList.add('cabecalho__lista__item--active');
 
+        secoes.forEach(dataSecao =>{
+            dataSecao.removeAttribute('data-id');
+            dataSecao.classList.add('hidden')
+        })
+
+        secoes[index].setAttribute('data-id', `${mudaContexto}`);
+
+        
+        secoes[index].classList.remove('hidden');
+    })
 })
-    // const conteudo = conteudoPrincipal.dataset.conteudo;
+
+
+
+
+
+
+
