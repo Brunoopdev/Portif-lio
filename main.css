@@ -81,6 +81,8 @@ h1{
     padding-bottom: 40px;
 }
 
+
+
 .cabecalho__info__text p{
     line-height: 30px;
     font-size: 20px;
@@ -150,7 +152,7 @@ h1{
 }
 
 .about__container__social__logo:hover, .logo:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -243,5 +245,169 @@ h1{
     left: 44.6%;
     opacity: .7;
     font-size: 12px;
+}
+
+
+@media (max-width:640px) {
+
+    html{
+        background-image: url(./images/background\ mobile.png);
+        background-repeat: no-repeat;
+        background-size:600px;
+        background-position: center; 
+    }
+
+    .cabecalho__lista{
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .cabecalho__lista{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .cabecalho__lista__item{
+        padding-top: 10px;
+        height: 43px;
+    }
+
+    .cabecalho__lista__item--active{
+        border-bottom: 3px solid #ffffff;
+        padding-bottom: 5px;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+
+    .logo img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .cabecalho__info{
+        display: block;
+        margin-top: 40px;
+    }
+
+    .cabecalho__info__text{
+        text-align: center;
+        font-size:15px;
+        margin-bottom: 40px;
+    }
+
+    .cabecalho__info__text p{
+        font-size: 15px;
+        width: 200px;
+        line-height: normal;
+        margin: 0 auto;
+    }
+
+    .cabecalho__info__img{
+        text-align: center;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .projetos__list{
+        display: block;
+    }
+
+    .projetos__text{
+        font-size: 15px;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .projetos__list{
+        margin-top: 10px;
+    }
+
+    .projetos__list__item img{
+        width: 200px;
+        box-shadow: none;
+    }
+
+    .projetos__list__item h3{
+        margin-top: 5px;
+        margin-bottom: 2px;
+        visibility:hidden;
+    }
+
+    .last__item{
+        margin-bottom: 40px;
+    }
+
+
+    .about{
+        height: 700px;
+    }
+
+    .about__text{
+        margin: 0 auto;
+    }
+
+    .about__text h2{
+        font-size: 20px;
+    }
+
+    .about__text p{
+        font-size: 15px;
+        width: 200px;
+        line-height: normal;
+    }
+
+    .about__container__languages h3{
+        font-weight: bold;
+    }
+
+    .about__container__social{
+        position: absolute;
+        top: 580px;
+        left: 96px;
+        width: 300px;
+        }
+
+    .about__container__social img{
+        height: 20px;
+    }
+
+    .about__container__languages{
+        color: #fff;
+    }
+
+    .barra__intra__front{
+        width: 200px;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 10px 0px;
+    }
+    
+    .barra__intra__js{
+        width: 130px;
+        height: 5px;
+        background-color:#ffffff;
+        margin: 10px 0px;
+    }
+    
+    .barra__intra__bancoDeDados{
+        width: 50px;
+        height: 5px;
+        background-color:#ffffff;
+        margin: 10px 0px;
+    }
+    
+    .barra__intra__php{
+        width: 50px;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 10px 0px;
+    }
 }
 
