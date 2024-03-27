@@ -368,9 +368,7 @@ h1{
     }
 
     .about__container__social{
-        position: absolute;
-        left: 98px;
-        bottom: -100px;    
+        left: auto;
     }
 
     .about__container__social img{
