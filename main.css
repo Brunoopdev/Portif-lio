@@ -178,9 +178,9 @@ h1{
 }
 
 .about__container__social{
-    position: fixed;
-    bottom: 30px; 
-    left: 40px;
+    position:absolute;
+    bottom: -120px; 
+    left: -120px;
 }
 
 .about__container__social img{
@@ -311,7 +311,7 @@ h1{
     }
 
     .footer{
-        display: none;
+        visibility: hidden;
     }
 
     .projetos__list{
@@ -369,10 +369,9 @@ h1{
 
     .about__container__social{
         position: absolute;
-        top: 580px;
         left: 96px;
-        width: 300px;
-        }
+        bottom: -100px;    
+    }
 
     .about__container__social img{
         height: 20px;
